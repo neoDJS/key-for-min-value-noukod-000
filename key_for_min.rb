@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   val = "$"
   key = nil
   name_hash.collect{|k, v|
-                            val = val=="$"? v : val
+                            #val = val=="$"? v : val
                             key = k if v < val
                           }
   key
